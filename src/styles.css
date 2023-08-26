@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  background-color: rgb(22, 25, 27);
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(212, 212, 212);
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.container {
+  padding: 30px;
+  background-color: #24232b;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px #00000011;
+  width: 90%;
+  max-width: 400px;
+}
+form {
+  width: 100%;
+  font-size: 20px;
+}
+.result {
+  background-color: #24232b;
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: Arial;
+}
+.result #result {
+  width: 85%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.result .clipboard {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #2a8b8b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.charlength {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  padding-bottom: 24px;
+  color: #707070;
+  font-family: Arial;
+}
+
+.charlength span {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+.charlength span #lable10 {
+  color: #ffffff;
+}
+.field input[type="range"] {
+  background-color: #2a8b8b !important;
+}
+.field #lable1 {
+  color: #707070;
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 20px;
+}
+.field #lable2 {
+  color: #707070;
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 16px;
+}
+.field {
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  padding-right: 10px;
+  transition: 0.3s ease background-color;
+}
+.field:first-of-type {
+  padding-right: 0;
+}
+.field:hover {
+  background-color: rgb(26, 29, 31);
+}
+.field label {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.field input {
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  background-color: #2a8b8b;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 6px;
+}
+
+.password-strength {
+  display: flex;
+  justify-content: space-between;
+  color: #707070;
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: rgb(22 25 27);
+  padding: 20px;
+  border-radius: 7px;
+}
+
+@media only screen and (max-width: 678px) {
+  .field {
+    font-size: 16px;
+  }
+}
